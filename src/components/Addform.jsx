@@ -1,7 +1,4 @@
-export default function Addform(ShoppingItem){
-
-   
-
+export default function Addform(){
     
     return(
         <form >
@@ -12,4 +9,5 @@ export default function Addform(ShoppingItem){
             <button>Legg til vare</button>
         </form>
     )
+  
 }

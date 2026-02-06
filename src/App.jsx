@@ -6,6 +6,8 @@ import Addform from './components/Addform'
 import ShoppingList from './components/ShoppingList'
 
 
+// Har brukt todo oppgaven til hjelp og har jobbet sammen med/sammerbeidet med Jesper
+
 function App() {
   const HandlelisteVare = [
     {
@@ -26,8 +28,6 @@ function App() {
       <h1>Handleliste</h1>
       <Addform />
       <ShoppingList />
-
-      
       
     </main>
   )
