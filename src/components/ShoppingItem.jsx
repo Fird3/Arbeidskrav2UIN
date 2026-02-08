@@ -3,10 +3,8 @@ export default function ShoppingItem({title, number}){
     return(
         <article>
             <input type="checkbox"></input> 
-            <h3>{title}</h3>
+            <p>{title}</p>
             <p>{number}</p>
-            <input type="number" min="1"></input>
-            
         </article>
     )
 }

@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Addform from './components/Addform'
 import ShoppingList from './components/ShoppingList'
@@ -22,12 +20,14 @@ function App() {
       number: 1
     }
   ]
+
+  const [Liste, setListe] = useState(HandlelisteVare)
  
   return (
     <main>
       <h1>Handleliste</h1>
       <Addform />
-      <ShoppingList />
+      <ShoppingList HandlelisteVare={Liste} setListe={setListe} />
       
     </main>
   )
