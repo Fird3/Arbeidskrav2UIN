@@ -1,0 +1,47 @@
+main{
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 30px;
+    color: black;
+    width: 275px;
+
+    ol{
+        padding: 0;
+    }
+}
+
+h1{
+    font-size: 2rem;
+    text-align: left;
+}
+.listepunkt{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    p{
+        width: 200px;
+        text-align: left;
+    }
+}
+
+.antallboks{
+    background: none;
+    border-style: none;
+    width: 40px;
+    color: black;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+
+    input{
+        padding: 1rem;
+        border-radius: 10px;
+    }
+}
+

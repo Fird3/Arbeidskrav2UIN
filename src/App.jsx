@@ -4,9 +4,14 @@ import Addform from './components/Addform'
 import ShoppingList from './components/ShoppingList'
 
 
-// Har brukt todo oppgaven til hjelp og har jobbet sammen med/sammerbeidet med Jesper
+
+// Har brukt todo oppgaven til hjelp og har jobbet sammen med/sammerbeidet med Jesper Østli Simensen
+
 
 function App() {
+
+
+
   const HandlelisteVare = [
     {
       id: 0,
@@ -22,11 +27,12 @@ function App() {
   ]
 
   const [Liste, setListe] = useState(HandlelisteVare)
+  const [Varer, setVarer] = useState()
  
   return (
     <main>
       <h1>Handleliste</h1>
-      <Addform />
+      <Addform Varer={Varer} setVarer={setVarer} setListe={setListe}/>
       <ShoppingList HandlelisteVare={Liste} setListe={setListe} />
       
     </main>
