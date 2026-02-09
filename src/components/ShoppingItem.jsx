@@ -1,6 +1,7 @@
 import '../style/style.css'
 
 export default function ShoppingItem({title, number}){
+    
     return(
         <li className="listepunkt">
             <input type="checkbox"></input> 

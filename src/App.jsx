@@ -5,7 +5,7 @@ import ShoppingList from './components/ShoppingList'
 
 
 
-// Har brukt todo oppgaven til hjelp og har jobbet sammen med/sammerbeidet med Jesper Østli Simensen
+// Har brukt todo oppgaven fra forelesning til hjelp og har jobbet sammen med/sammerbeidet med Jesper Østli Simensen
 
 
 function App() {
