@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Addform from './components/Addform'
 import ShoppingList from './components/ShoppingList'
+import ShoppingItem from './components/ShoppingItem'
 
 
 
@@ -16,19 +17,22 @@ function App() {
       id: 0,
       title: "Melk",
       number: 2,
-      checkboksen: true
+      check: true
 
 
     },
     {
       id: 1,
       title: "Egg",
-      number: 1
+      number: 1,
+      check: false
     }
   ]
 
+
   const [liste, setListe] = useState(handlelisteVare)
   const [varer, setVarer] = useState()
+
 
   console.log(liste)
  

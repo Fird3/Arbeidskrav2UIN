@@ -1,12 +1,11 @@
 import '../style/style.css'
 
-
 export default function ShoppingItem({title, number}){
    
     
     return(
         <li className="listepunkt">
-            <input type="checkbox"></input> 
+            <input type="checkbox" id="checkbox"></input> 
             <p>{title}</p>
             <input name="vare" type="number" min="1" defaultValue={number} className='antallboks'></input>
         </li>
