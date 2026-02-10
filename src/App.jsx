@@ -12,11 +12,12 @@ function App() {
 
 
 
-  const HandlelisteVare = [
+  const handlelisteVare = [
     {
       id: 0,
       title: "Melk",
       number: 2
+
       
     },
     {
@@ -26,14 +27,16 @@ function App() {
     }
   ]
 
-  const [Liste, setListe] = useState(HandlelisteVare)
-  const [Varer, setVarer] = useState()
+  const [liste, setListe] = useState(handlelisteVare)
+  const [varer, setVarer] = useState([])
+
+  console.log(liste)
  
   return (
     <main>
       <h1>Handleliste</h1>
-      <Addform Varer={Varer} setVarer={setVarer} setListe={setListe}/>
-      <ShoppingList HandlelisteVare={Liste} setListe={setListe} />
+      <Addform Varer={varer} setVarer={setVarer} setListe={setListe}/>
+      <ShoppingList handlelisteVare={liste} setListe={setListe} />
       
     </main>
   )

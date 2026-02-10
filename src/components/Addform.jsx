@@ -1,15 +1,17 @@
-export default function Addform({Varer, setVarer, setListe}){
+export default function Addform({varer, setVarer, setListe}){
 
     const Leggtil = (e) =>{
-        const {navn, verdi} = e.target
-        setVarer((prev) => ({...prev,[navn]: verdi}))
+        const {name, value} = e.target
+        setVarer(prev => ([...prev, {title: name, number: value }]))
 
     }
+
+    console.log(varer, "varer")
 
     const Knapp = (e)=>{
         e.preventDefault()
         const unikId = Math.floor(Math.random() * (999 - 0 + 1) + 1)
-        setListe((prev) => ([...prev, {id:unikId, ...Varer}]))
+        setListe((prev) => ([...prev, {id:unikId, ...varer}]))
 
     }
     
