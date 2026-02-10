@@ -16,6 +16,8 @@ export default function Addform({varer, setVarer, setListe}){
         setListe((prev) => ([...prev, {id:unikId, ...varer}]))
 
     }
+
+  
     
     return(
         <form className="form" onSubmit={Knapp}>
