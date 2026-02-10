@@ -5,20 +5,20 @@ import ShoppingList from './components/ShoppingList'
 
 
 
+
 // Har brukt todo oppgaven fra forelesning til hjelp og har jobbet sammen med/sammerbeidet med Jesper Østli Simensen
 
 
 function App() {
 
-
-
   const handlelisteVare = [
     {
       id: 0,
       title: "Melk",
-      number: 2
+      number: 2,
+      checkboksen: true
 
-      
+
     },
     {
       id: 1,
@@ -28,14 +28,14 @@ function App() {
   ]
 
   const [liste, setListe] = useState(handlelisteVare)
-  const [varer, setVarer] = useState([])
+  const [varer, setVarer] = useState()
 
   console.log(liste)
  
   return (
     <main>
       <h1>Handleliste</h1>
-      <Addform Varer={varer} setVarer={setVarer} setListe={setListe}/>
+      <Addform varer={varer} setVarer={setVarer} setListe={setListe}/>
       <ShoppingList handlelisteVare={liste} setListe={setListe} />
       
     </main>
