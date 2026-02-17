@@ -32,6 +32,7 @@ function App() {
 
   const [liste, setListe] = useState(handlelisteVare)
   const [varer, setVarer] = useState()
+  
 
 
   console.log(liste)
