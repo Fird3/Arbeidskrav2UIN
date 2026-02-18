@@ -1,14 +1,35 @@
-import { useState } from "react"
+
 
 // https://www.youtube.com/watch?v=WwBu3oykkBs
 
-export default function Checkboxfunc(){
-    // const checkboxRef = useRef(null)
-    const [isChecked, setIsCheck] = useState(false);
-    const onHandleChange = () => {
-        setIsCheck(!isChecked)
-    }
-    return(
-        <input type="checkbox" id="checkbox" value={isChecked} onChange={onHandleChange} ></input>
+export default function Checkbox ({isChecked, checkHandler}){
+     return (
+        <input
+        type="checkbox"
+        checked={isChecked}
+        onChange={checkHandler}>
+        </input>
     )
+
 }
+   
+// export default function Checkboxfunc(checkHandler){
+//     // const checkboxRef = useRef(null)
+//     const [isChecked, setIsCheck] = useState();
+//     const onHandleChange = () => {
+//         setIsCheck(!isChecked)
+//     }
+
+//     const updateCheckStatus = index => {
+//         handlelisteVare(
+//             liste.map((idk, currentIndex) =>
+//             currentIndex === index
+//         ? {...idk, checked: ! idk.checked}
+//     :idk)
+//         )
+//     }
+    
+//     return(
+//         <input type="checkbox" id="checkbox"  defaultChecked={isChecked} onChange={checkHandler} ></input>
+//     )
+// }
