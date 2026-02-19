@@ -1,27 +1,22 @@
 import '../style/style.css'
-import Checkbox from './Checkbox'
-import handlelisteVare from '../App'
 
-
-
-
-export default function ShoppingItem({title, number}){
-    const renderCheckbox =() =>     {
-        return handlelisteVare.map()
-    }
+export default function ShoppingItem({title, number, checked}){
+  
+    console.log(checked)
    
-   
-    
     return(
-        <li className="listepunkt">
-            < Checkbox /> 
-            
-            {/* <input type='checkbox' defaultValue={checked}></input> */}
+        <li className="listepunkt">   
+            <input type="checkbox" name="check" id="" defaultChecked={checked}  />
             <p>{title}</p>
             <input name="vare" type="number" min="1" defaultValue={number}  className='antallboks'></input>
         </li>
     )
 }
 
+// Fikk hjelp i studass time av Thor til å få defaultChecked={checked til å fungere
+//  ettersom jeg tenkte litt for avansert. 
+// Hadde glømt å putte checked={vare.checked} i shoppingList under}
 
-// Få valuen til å kunne gå opp eller ned når man trykker på knappene
+// Fant ut at jeg måtte bruke defaultValue og defaultChecked istedenfor bare Value og Checked med hjelp av:
+// https://react.dev/reference/react-dom/components/input#controlling-an-input-with-a-state-variable
+

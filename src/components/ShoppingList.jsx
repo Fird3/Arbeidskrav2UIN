@@ -6,10 +6,9 @@ export default function ShoppingList({handlelisteVare, setListe}){
     <section>
         <ol>
           {handlelisteVare.map((vare) => 
-          <ShoppingItem key={vare.id} title={vare.title} number={vare.number} id={vare.id} setListe={setListe} 
+          <ShoppingItem key={vare.id} title={vare.title} number={vare.number} id={vare.id} setListe={setListe} checked={vare.checked}
           /> )}
         </ol>
-        
     </section>
   )
   
