@@ -23,7 +23,7 @@ export default function Addform({varer, setVarer, setListe}){
             <button >Legg til vare</button>
         </form>
     )
-  
+
 }
 
 // Pattern for tekst er tatt fra: 
