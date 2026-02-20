@@ -17,7 +17,7 @@ export default function Addform({varer, setVarer, setListe}){
     return(
         <form className="form" onSubmit={Knapp}>
             <label htmlFor="formtitle">Vare</label>
-            <input name="title" placeholder="Egg.." id="formtitle" type="text" pattern="[A-Za-z]" required onChange={Leggtil}></input>
+            <input name="title" placeholder="Egg.." id="formtitle" type="text" pattern="[A-åa-å\s]{1,100}" required onChange={Leggtil}></input>
             <label>Antall</label>
             <input name="number" placeholder="2" type="number" min="1" required onChange={Leggtil}></input>
             <button >Legg til vare</button>
@@ -27,4 +27,4 @@ export default function Addform({varer, setVarer, setListe}){
 }
 
 // Pattern for tekst er tatt fra: 
-// https://www.w3schools.com/tags/att_input_pattern.asp
+// https://stackoverflow.com/questions/51359253/html-pattern-for-more-words
