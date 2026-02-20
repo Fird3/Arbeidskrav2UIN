@@ -39,6 +39,8 @@ export default App
 // Har brukt todo oppgaven fra forelesning til hjelp med deler av oppgaven, 
 // mest med funksjonene inne i Addform.jsx filen,
 // men også til selve oppsette til filen.
+//
+//https://github.com/toremake/uin2026_coursebase/tree/main/ToDos
 // 
 // Jeg har også jobbet sammen med/sammerbeidet litt med Jesper Østli Simensen i starten av oppgaven
 // med shopping list og litt av det inne på Addform.
